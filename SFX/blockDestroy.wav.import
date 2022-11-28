@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/blockDestroy.wav-62b04c293ac68e9975b4c74eb4054d3d.sample"
+
+[deps]
+
+source_file="res://SFX/blockDestroy.wav"
+dest_files=[ "res://.import/blockDestroy.wav-62b04c293ac68e9975b4c74eb4054d3d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Sprites/Outro/spr_lastCutscene.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Outro/spr_darkBack.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/LastCutscene.gd" type="Script" id=3]
+[ext_resource path="res://Sprites/Outro/spr_darkBackText.png" type="Texture" id=4]
+[ext_resource path="res://Music/mus_outro.ogg" type="AudioStream" id=5]
+
+[node name="LastCutscene" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="SprDarkBack" type="Sprite" parent="."]
+position = Vector2( 480, 270 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="SprDarkBackText" type="Sprite" parent="."]
+visible = false
+position = Vector2( 480, 270 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="SprLastCutscene" type="Sprite" parent="."]
+position = Vector2( 480, 271 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+hframes = 6
+
+[node name="Outro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -6.0
+autoplay = true
